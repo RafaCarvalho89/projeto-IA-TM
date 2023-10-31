@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Pacifico&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+
+:root {
+   --azul : #034C8C;
+   --prata: #A1A1A1;
+   --bronze: #CD7F32;
+   --branco: #ffffff;
+   --preto: #000000;
+   --sombraFonte: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   --sombraDiv: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Roboto' ;
+   color: var(--branco);
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: var(--azul);
+   background-image: url(../img/brilhoAzul.gif);
+}
+
+header {
+   background-color: var(--bronze);
+   height: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row-reverse;
+   box-shadow: var(--sombraDiv);
+   padding: 30px;
+}
+
+#logo h1 {
+   font-family: 'Bigelow Rules', cursive;
+   font-size: 45px;
+   margin: 30px;
+   color: var(--azul);
+   text-shadow: var(sombraFonte);
+}
+
+span {
+    color: var(--azul);
+}
+
+.liNav  {
+   font-size: 30px;
+   list-style: none;
+   display: inline;
+   margin-right: 30px;
+}
+
+main {
+   display: flex;
+   margin: 0 auto;
+   flex-direction: row-reverse;
+   width: 90%;
+}
+
+#principal{
+   display: flex;
+   width: 70%;
+   height: auto;
+   margin: 0 auto;
+   background-color: var(--branco);
+   padding: 30px;   
+}
+
+#conteudoLateral {
+   margin: 30px;
+   padding: 20px;
+   width: 30%;
+   background-image: url(../img/bgAside.jpg);
+   background-size: contain; 
+   /* background-position: center; */
+   font-weight: bold;
+   margin-top: 0px;
+}
+
+
+#bemVindo {
+   width: 100%;
+   background-color: var(--azul);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 30px;
+   background-image: url(../img/brilhoAzul.gif);
+   font-size: 20px;
+   font-weight: lighter;
+}
+
+#bemVindo  p {
+   color: var(--branco);
+   text-align: center;
+   margin-bottom: 10px;
+   background-color: var(--azul);
+   font-weight: bold;
+   text-shadow: var(--sombraFonte);
+}
+
+#bemVindo img {
+   width: 200px;
+}
+
+
+.destaqueLetra {
+   font-size: 30px;
+   font-weight: bold;
+   color: var(--bronze);
+   font-family: 'Bigelow Rules', cursive;
+}
+
+.imgCard {
+   max-width: 220px;
+   border-radius: 5px;
+}
+
+#card {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+   height: auto;
+   border: 3px dotted var(--preto);   
+   margin-bottom: 10px;
+}
+
+h1 {
+   margin-top: -20px;
+   font-family: 'Bigelow Rules', cursive, cursive;
+   /* letter-spacing: 3px; */
+   font-size: 40px;
+   text-align: center;
+   color: var(--preto);
+   text-shadow: var(--sombraFonte);
+}
+
+h2 {
+   text-align: center;
+   padding: 5px;
+   color: var(--branco);
+   text-shadow: var(--sombraFonte);
+}
+
+#txtCard {
+   text-align: justify;
+   padding: 20px;
+   color: var(--preto);
+}
+
+a {
+   text-decoration: none;
+   color: var(--branco);
+}
+
+a:hover{
+   font-weight: bold;
+   cursor: pointer;
+}
+
+
+ol {
+   margin-left: 30px;
+   margin-bottom: 15px;
+   margin-top: 15px;
+}
+
+h3 {
+   margin-top: 5px;
+   border-bottom: 1px solid rgb(145, 145, 152);
+   color: var(--preto);
+   margin-bottom: 10px;
+   padding: 5px;
+}
+
+
+aside {
+   display: none;
+   background-color: #10141b;
+   width: 40%;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+}
+
+#menuLateral li{
+   color: var(--branco);
+   list-style: none;
+   padding: 20px;
+   text-transform: uppercase;
+}
+
+#menuBaixo {
+   display: none;
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   background-color: var(--azul);
+}
+
+#menuBaixo ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+#menuBaixo li {
+   margin: 10px;
+   list-style: none;
+}
+
+#menuBaixo a {
+   color: var(--bronze);
+   font-weight: bold;
+}
+
+#menuBaixo a:hover {
+   color: #eca202;
+}
+
+#cardSection {
+   width: 80%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   margin: 0 auto;
+}
+
+/* #principal :nth-child(9) {
+   margin-bottom: 30px;
+} */
+
+#cardSection p {
+   text-align: justify;
+   line-height: 1.5;
+   color: var(--preto);
+}
+
+
+h1 {
+   margin-top: -20px;
+   font-family: 'Bigelow Rules', cursive;
+   font-size: 40px;
+   text-align: center;
+   color: var(--preto);
+}
+
+h2 {
+   text-align: center;
+   padding: 5px;
+   color: var(--preto);
+}
+
+p {
+   color: var(--preto);
+}
+
+#conteudoLateral a {
+   color: var(--azul);
+   font-weight: bold;
+}
+
+#conteudoLateral a:hover {
+   color: #0b5709;
+}
+
+#cardSection a {
+   color: var(--azul);
+   font-weight: bold;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" href="./images/selector-hat.ico" type="image/x-icon">
+  <title>Qual a Sua Casa?</title>
+</head>
+<body>
+  <main>
+    <section class="content">
+      <div class="card">
+        <div class="file">
+          <label class="ocultar" for="input">
+            <img src="./images/selector-hat-250.png" alt="Chápeu Seletor">
+            <p>ENVIAR IMAGEM</p>
+            
+          </label>
+          <input type="file" name="input" id="input" accept="image/png, image/jpeg">
+          <a href="" id="link-casa"><img src="" id="img-casa"></a>
+        </div>
+        <div class="results">
+          <div id="label-container"></div>
+          <div id="webcam-container"></div>
+          <h1>Qual a sua Casa em Hogwarts?</h1>
+          <div class="bars-content">
+            <h3>Grifinória</h3>
+            <div class="bars" id="bar-0">
+              <span id="prob0">0%</span>
+              <div class="bar-fill" id="bar-fill-0"></div>
+            </div>
+            <h3>Sonserina</h3>
+            <div class="bars" id="bar-1">
+              <span id="prob1">0%</span>
+              <div class="bar-fill" id="bar-fill-1"></div>
+            </div>
+            <h3>Lufa-Lufa</h3>
+            <div class="bars" id="bar-2">
+              <span id="prob2">0%</span>
+              <div class="bar-fill" id="bar-fill-2"></div>
+            </div>
+            <h3>Corvinal</h3>
+            <div class="bars" id="bar-3">
+              <span id="prob3">0%</span>
+              <div class="bar-fill" id="bar-fill-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="colors">
+      <div id="color1"></div>
+      <div id="color2"></div>
+      <div id="color3"></div>
+      <div id="color4"></div>
+    </section>
+  </main>  
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

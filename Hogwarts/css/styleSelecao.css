@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Pacifico&family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0D0D0D;
+    color: white;
+    font-family: 'Bigelow Rules', cursive;;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}        
+
+#casas {
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+}
+
+#grifinoria img:hover,
+#sonserina img:hover,
+#lufa-lufa img:hover,
+#corvinal img:hover {
+transition: transform 0.3s ease-in-out;
+transform: scale(1.1);
+}
+
+#grifinoria {
+    width: 50%;
+    background-color: #A60311;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sonserina {
+    width: 50%;
+    background-color: #04590A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lufa-lufa {
+    width: 50%;
+    background-color: #D9A404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#corvinal {
+    width: 50%;
+    background-color: #034C8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 250px;
+}
+
+/* celular */
+@media screen and (max-width: 720px) {
+    #casas {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #grifinoria, #sonserina, #lufa-lufa, #corvinal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 25%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 150px;
+    }
+}

@@ -1,0 +1,148 @@
+@media (max-width: 600px) {
+  #conteudoLateral {
+     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #principal {
+     width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #cardSection {
+     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #menuBaixo {
+     width: 100%;
+     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #diretor {
+     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  #principal img {
+     max-width: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  #principal p {
+    hyphens: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #menuBaixo ul li:nth-child(2) a {
+     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #menuBaixo ul li:nth-child(1) img {
+     max-width: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  #menuBaixo ul li{
+     font-size: 0.8em;
+     align-items: center;
+     margin: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  #menuBaixo .ocultar {
+     display: block;
+  }
+}
+
+.ocultar {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #menuBaixo ul li{
+     font-size: 0.8em;
+     align-items: center;
+     margin: 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  p {
+      font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+      font-size: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  #bemVindo img {
+      max-width: 180px;
+  }
+}
+
+@media (max-width: 600px) {
+  #grid  {
+      min-width: 70%;
+      display: flex;
+      align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #card  {
+      min-width: 100%;
+      margin: 8px;
+      overflow: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  #bemVindo p:nth-child(2)  {
+      font-size: 0.80em;
+      line-height: 1.2;
+  }
+}
+
+@media (max-width: 600px) {
+  .letter {
+      width: 450px;
+      transition: all 5s;
+  }
+}
+
+@media (max-width: 600px) {
+  main .box {
+      width: 800px;
+      padding: 20px;
+      /* height: 100vh; */
+      background-color: rgb(24, 240, 168);
+      border: none;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+}

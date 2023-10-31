@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Magic Commerce</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Magic Commerce</h1>
+        <nav>
+            <!-- <img src="/images/divider.svg" alt=""> -->
+            <a href="../home.html" target="_blank">HOME</a>
+            <a href="../paginas/transicaoGrifinoria.html" target="_blank" >GRIFINÓRIA</a>
+            <a href="../paginas/transicaoSonserina.html" target="_blank">SONSERINA</a>
+            <a href="../paginas/transicaoLufa-Lufa.html" target="_blank">LUFA-LUFA</a>
+            <a href="../paginas/transicaoCorvinal.html" target="_blank">CORVINAL</a>
+            <a href="../site-selecao-das-casas1/index.html" target="_blank">QUAL SUA CASA?</a>
+            <!-- <img style="transform: scaleX(-1)" src="/images/divider.svg" alt=""> -->
+        </nav>
+        <i class="fa-solid fa-bag-shopping cart-icon"></i>
+        <div class="cart">
+            <h2 class="cart-title">Carrinho</h2>
+            <div class="cart-content">
+                
+            </div>
+            <div class="total">
+                <div class="total-title">TOTAL</div>
+                <div class="total-price">R$ 0.00</div>
+            </div>
+            <button type="button" class="buy-btn">Comprar</button>
+            <i class="fa-solid fa-xmark close-cart"></i>
+        </div>
+    </header>
+    <main id="top">
+        <section class="banner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/banner-5.png" class="d-block w-100 banner-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block txt-carrosel">
+                      <h5>IA das casas</h5>
+                      <p>Saiba qual é a sua casa</p>
+                      <a href="../site-selecao-das-casas1/index.html" target="_blank" target="_blank"><button class="button-saiba" >Saiba Mais</button></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/banner-6.jpeg" class="d-block w-100 banner-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block txt-carrosel">
+                      <h5>Magic Commerce</h5>
+                     <p>Conheça nossos produtos</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <img src="images/banner-8.png" class="d-block w-100 banner-img" alt="...">
+                    <div class="carousel-caption d-none d-md-block txt-carrosel">
+                      <h5>Profeta diário</h5>
+                      <p>Noticías do mundo bruxo</p>
+                      <a href="../paginas/profetaDiario.html" target="_blank"><button class="button-saiba">Saiba Mais</button></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" style="display: none;" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"  style="display: none;" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <section class="category">
+            <a href="#wand">
+                <div>
+                    <img src="./images/corner-left.png" alt="" class="img-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="img-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="img-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="img-corner-bottom-right">
+                    <p>VARINHAS</p>
+                </div>
+            </a>
+            <a href="#tshirt">
+                <div>
+                    <img src="./images/corner-left.png" alt="" class="img-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="img-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="img-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="img-corner-bottom-right">
+                    <p>CAMISETAS</p>
+                </div>
+            </a>
+            <a href="#hood">
+                <div>
+                    <img src="./images/corner-left.png" alt="" class="img-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="img-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="img-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="img-corner-bottom-right">
+                    <p>CASACOS</p>
+                </div>
+            </a>
+            <a href="#scarf">
+                <div>
+                    <img src="./images/corner-left.png" alt="" class="img-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="img-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="img-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="img-corner-bottom-right">
+                    <p>CACHECÓIS</p>
+                </div>
+            </a>
+            <a href="#frame">
+                <div>
+                    <img src="./images/corner-left.png" alt="" class="img-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="img-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="img-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="img-corner-bottom-right">
+                    <p>ESTANDARTES</p>
+                </div>
+            </a>
+        </section>
+        <section class="products" id="wand">
+            <div class="category-title">
+                <!-- <img src="/images/divider.svg" alt=""> -->
+                <h2 class="products-title">VARINHAS</h2>
+                <!-- <img style="transform: scaleX(-1)" src="/images/divider.svg" alt=""> -->
+            </div>
+            <div class="items-container">
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images//products/varinha-harry.jpg" alt="" class="img-item">
+                        <p class="item-title">Varinha - Harry Potter</p>
+                        <p class="item-price">R$ 89.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn open-modal-1" >Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images//products/varinha-voldemort.jpg" alt="" class="img-item">
+                        <p class="item-title">Varinha - Voldemort</p>
+                        <p class="item-price">R$ 89.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" >Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/varinha-dumbledore.jpg" alt="" class="img-item">
+                        <p class="item-title">Varinha - Dumbledore</p>
+                        <p class="item-price">R$ 89.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/varinha-herminone.jpg" alt="" class="img-item">
+                        <p class="item-title">Varinha - Hermione</p>
+                        <p class="item-price">R$ 89.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/varinha-rony.jpg" alt="" class="img-item">
+                        <p class="item-title">Varinha - Rony</p>
+                        <p class="item-price">R$ 89.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/varinha-draco.jpg" alt="" class="img-item">
+                        <p class="item-title">Varinha - Draco</p>
+                        <p class="item-price">R$ 89.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="tshirt">
+            <div class="category-title">
+                <!-- <img src="/images/divider.svg" alt=""> -->
+                <h2 class="products-title">CAMISETAS</h2>
+                <!-- <img style="transform: scaleX(-1)" src="/images/divider.svg" alt=""> -->
+            </div>
+            <div class="items-container">
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/camiseta-hogwarts.png" alt="" class="img-item">
+                        <p class="item-title">Camiseta - Hogwarts</p>
+                        <p class="item-price">R$ 79.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/camiseta-reliquias-da-morte.png" alt="" class="img-item">
+                        <p class="item-title">Camiseta - Relíquias da Morte</p>
+                        <p class="item-price">R$ 79.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/camiseta-grifinoria.png" alt="" class="img-item">
+                        <p class="item-title">Camiseta - Grifinória</p>
+                        <p class="item-price">R$ 79.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/camiseta-sonserina.png" alt="" class="img-item">
+                        <p class="item-title">Camiseta - Sonserina</p>
+                        <p class="item-price">R$ 79.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/camiseta-corvinal.png" alt="" class="img-item">
+                        <p class="item-title">Camiseta - Corvinal</p>
+                        <p class="item-price">R$ 79.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/camiseta-lufa-lufa.png" alt="" class="img-item">
+                        <p class="item-title">Camiseta - Lufa-Lufa</p>
+                        <p class="item-price">R$ 79.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="hood">
+            <div class="category-title">
+                <!-- <img src="/images/divider.svg" alt=""> -->
+                <h2 class="products-title">CASACOS</h2>
+                <!-- <img style="transform: scaleX(-1)" src="/images/divider.svg" alt=""> -->
+            </div>
+            <div class="items-container">
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/casaco-hogwarts.png" alt="" class="img-item">
+                        <p class="item-title">Casaco - Hogwarts</p>
+                        <p class="item-price">R$ 149.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/casaco-mapa-do-maroto.png" alt="" class="img-item">
+                        <p class="item-title">Casaco - Mapa do Maroto</p>
+                        <p class="item-price">R$ 149.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/casaco-grifinoria.png" alt="" class="img-item">
+                        <p class="item-title">Casaco - Grifinória</p>
+                        <p class="item-price">R$ 149.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/casaco-sonserina.png" alt="" class="img-item">
+                        <p class="item-title">Casaco - Sonserina</p>
+                        <p class="item-price">R$ 149.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/casaco-corvinal.png" alt="" class="img-item">
+                        <p class="item-title">Casaco - Corvinal</p>
+                        <p class="item-price">R$ 149.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/casaco-lufa-lufa.png" alt="" class="img-item">
+                        <p class="item-title">Casaco - Lufa-Lufa</p>
+                        <p class="item-price">R$ 149.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="scarf">
+            <div class="category-title">
+                <!-- <img src="/images/divider.svg" alt=""> -->
+                <h2 class="products-title">CACHECÓIS</h2>
+                <!-- <img style="transform: scaleX(-1)" src="/images/divider.svg" alt=""> -->
+            </div>
+            <div class="items-container">
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/cachecol-hogwarts.png" alt="" class="img-item">
+                        <p class="item-title">Cachecol - Hogwarts</p>
+                        <p class="item-price">R$ 99.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/cachecol-mapa-do-maroto.png" alt="" class="img-item">
+                        <p class="item-title">Cachecol - Mapa do Maroto</p>
+                        <p class="item-price">R$ 99.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/cachecol-grifinoria.png" alt="" class="img-item">
+                        <p class="item-title">Cachecol - Grifinória</p>
+                        <p class="item-price">R$ 99.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/cachecol-sonserina.png" alt="" class="img-item">
+                        <p class="item-title">Cachecol - Sonserina</p>
+                        <p class="item-price">R$ 99.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/cachecol-corvinal.png" alt="" class="img-item">
+                        <p class="item-title">Cachecol - Corvinal</p>
+                        <p class="item-price">R$ 99.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/cachecol-lufa-lufa.png" alt="" class="img-item">
+                        <p class="item-title">Cachecol - Lufa-Lufa</p>
+                        <p class="item-price">R$ 99.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products" id="frame">
+            <div class="category-title">
+                <!-- <img src="/images/divider.svg" alt=""> -->
+                <h2 class="products-title">ESTANDARTES</h2>
+                <!-- <img style="transform: scaleX(-1)" src="/images/divider.svg" alt=""> -->
+            </div>
+            <div class="items-container">
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/banner-grifinoria.png" alt="" class="img-item">
+                        <p class="item-title">Estandarte - Grifinória</p>
+                        <p class="item-price">R$ 109.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/banner-sonserina.png" alt="" class="img-item">
+                        <p class="item-title">Estandarte - Sonserina</p>
+                        <p class="item-price">R$ 109.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/banner-corvinal.png" alt="" class="img-item">
+                        <p class="item-title">Estandarte - Corvinal</p>
+                        <p class="item-price">R$ 109.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-border">
+                    <img src="./images/corner-left.png" alt="" class="border-corner-left">
+                    <img src="./images/corner-right.png" alt="" class="border-corner-right">
+                    <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left">
+                    <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right">
+                    <div class="items">
+                        <img src="./images/products/banner-lufa-lufa.png" alt="" class="img-item">
+                        <p class="item-title">Estandarte - Lufa-Lufa</p>
+                        <p class="item-price">R$ 109.90</p>
+                        <div class="btn-container">
+                            <button class="detail-btn" id="open-modal-1">Detalhes</button>
+                            <button class="add-cart-btn"><i class="fa-solid fa-bag-shopping"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+     
+    </main>
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-img">
+                <img src="./images/hogwarts.png" alt="" class="hogwarts-crest">
+            </div>
+            <div class="about">
+                <p>
+                    Magic Commmerce é o destino perfeito para todos os bruxos e bruxas apaixonados pelo mundo mágico de Harry Potter. Nossa loja oferece uma ampla seleção de réplicas de varinhas, camisetas, casacos, cachecóis e estandartes de parede, para que você possa expressar sua devoção por essa saga encantadora. Desperte a magia em seu dia a dia com nossos produtos meticulosamente criados para os fãs mais exigentes.
+                </p>
+                <div>
+                    <p><a href="#">POLÍTICA DE PRIVACIDADE</a></p>
+                    <p><a href="#">TERMOS DE USO</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <p>ACESSE NOSSAS REDES</p>
+            <div class="social-media-logos">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="top-button">
+            <a href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </footer>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-container">
+            <img src="./images/corner-left.png" alt="" class="border-corner-left modal-img" style="position: absolute; z-index: -1; top: -20px; left: -20px;">
+            <img src="./images/corner-right.png" alt="" class="border-corner-right modal-img"  style="position: absolute; z-index: -1; top: -20px; right: -20px;">
+            <img src="./images/corner-bottom-left.png" alt=""  class="border-corner-bottom-left modal-img"  style="position: absolute; z-index: -1;left: -20px; bottom: -20px;">
+            <img src="./images/corner-bottom-right.png" alt=""  class="border-corner-bottom-right modal-img"  style="position: absolute; z-index: -1;right: -20px; bottom: -20px; ">
+            <div id="modal-header">
+                <h2 id="modal-h2" class="item-title"></h2>
+                <button id="close-modal">X</button>
+            </div>
+            <div class="modal-body">
+                <img src="" id="modal-img"  class="img-item" style="max-height: 200px; max-width: 200px;">
+                <p id="modal-txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, tempore nemo provident debitis quidem error? Dolores adipisci et itaque autem architecto sunt accusamus veniam, minima eaque debitis molestias earum quas.</p>
+                <p id="modal-title"></p>
+                <p class="item-price" id="modal-price"></p>
+                <button class="add-cart-btn model-button"><i class="fa-solid fa-bag-shopping"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="../Hogwarts/js/script.js"></script>
+    <script src="../Hogwarts/js/home.js"></script>
+    <script src="scripts/model.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts/script.js" defer></script>
+</body>
+</html>
