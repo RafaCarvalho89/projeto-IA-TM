@@ -19,7 +19,9 @@ if(document.readyState == 'loading') {
     document.addEventListener('DomContentLoaded', ready);
 } else {
     ready();
-}// Função que inicia o carrinho
+}
+
+// Função que inicia o carrinho
 function ready() {
     // Remover itens do carinho
     let removeCartButtons = document.getElementsByClassName('cart-remove');
@@ -123,6 +125,20 @@ function updateTotal() {
         total = total + (price * quantity);
     }
     document.querySelector('.total-price').innerText = `R$ ${total.toFixed(2)}`;
+}
+
+
+let checkbox = document.querySelector(".toogle-menu");
+checkbox.addEventListener("click", slidingMenu);
+function slidingMenu(){
+    menuItens = document.querySelector(".menu-itens")
+    if(checkbox.checked) {
+        menuItens.style.right = "0";
+        console.log("check");
+    } else {
+        menuItens.style.right = "-310px";
+        console.log("uncheck");
+    }
 }
 
 
