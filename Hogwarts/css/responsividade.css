@@ -1,148 +1,175 @@
-@media (max-width: 600px) {
-  #conteudoLateral {
-     display: none;
+@media (max-width: 1080px) {
+  .menuLateral ul {
+    flex-direction: column;
+    align-items: flex-start;
   }
-}
-
-@media (max-width: 600px) {
-  #principal {
-     width: 90%;
+  
+  .menuLateral {
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    height: 100vh;                                     
+    position: fixed;  
+    top: 0;
+    padding-top: 70px;
+    z-index: 1;
+    transition: 0.8s ease-in-out;
+ }
+ .botaoMenu input:checked ~ .menuLateral {
+    right: 0;
   }
-}
-
-@media (max-width: 600px) {
-  #cardSection {
-     width: 100%;
+  .menu,
+  .alteraMenu {
+    display: block;
   }
-}
 
-@media (max-width: 600px) {
-  #menuBaixo {
-     width: 100%;
-     display: none;
-  }
-}
-
-@media (max-width: 600px) {
+  #salaComunal, 
   #diretor {
-     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #salaComunal img,
+  #diretor img {
+    max-width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+}
+
+@media (max-width: 950px) {
+  main {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  
+  #conteudoLateral {
+    margin: 30px auto;
+    max-width: 70%;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+  .about {
+      max-width: 500px;
+  }
+  .social-media {
+    margin-top: 20px;
+  }
+  .hogwarts-crest {
+      display: none;
+  }
+  .top-button {
+      scale: 0.75;
   }
 }
 
 @media (max-width: 600px) {
+  /* #conteudoLateral {
+     display: none;
+  } */
+
+  #principal {
+    width: 90%;
+  }
+
   #principal img {
-     max-width: 150px;
+    max-width: 150px;
   }
-}
 
-@media (max-width: 600px) {
   #principal p {
     hyphens: auto;
   }
-}
 
-@media (max-width: 600px) {
+  #cardSection {
+    width: 100%;
+  }
+
+  #menuBaixo {
+    width: 100%;
+    display: none;
+  }
+
+  #diretor {
+    margin-bottom: 30px;
+  }
+
   #menuBaixo ul li:nth-child(2) a {
-     display: none;
+    display: none;
   }
-}
 
-@media (max-width: 600px) {
   #menuBaixo ul li:nth-child(1) img {
-     max-width: 20px;
+    max-width: 20px;
   }
-}
 
-@media (max-width: 600px) {
   #menuBaixo ul li{
-     font-size: 0.8em;
-     align-items: center;
-     margin: 8px;
-  }
-}
+    font-size: 0.8em;
+    align-items: center;
+    margin: 8px;
+  } 
 
-@media (max-width: 600px) {
   #menuBaixo .ocultar {
-     display: block;
+    display: block;
   }
-}
 
-.ocultar {
+  .ocultar {
   display: none;
-}
+  }
 
-@media (max-width: 600px) {
   #menuBaixo ul li{
-     font-size: 0.8em;
-     align-items: center;
-     margin: 8px;
+    font-size: 0.8em;
+    align-items: center;
+    
+    margin: 8px;
   }
-}
-
-@media (max-width: 600px) {
   p {
-      font-size: 1em;
+    font-size: 1em;
   }
-}
 
-@media (max-width: 600px) {
   h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
-}
 
-@media (max-width: 600px) {
   #bemVindo img {
-      max-width: 180px;
+    max-width: 180px;
   }
-}
 
-@media (max-width: 600px) {
   #grid  {
-      min-width: 70%;
-      display: flex;
-      align-items: center;
-  }
-}
+    min-width: 70%;
+    display: flex;
+    align-items: center;
+  } 
 
-@media (max-width: 600px) {
   #card  {
-      min-width: 100%;
-      margin: 8px;
-      overflow: hidden;
+    min-width: 100%;
+    margin: 8px;
+    overflow: hidden;
   }
-}
 
-@media (max-width: 600px) {
   #bemVindo p:nth-child(2)  {
-      font-size: 0.80em;
-      line-height: 1.2;
+    font-size: 0.80em;
+    line-height: 1.2;
   }
-}
 
-@media (max-width: 600px) {
   .letter {
-      width: 450px;
-      transition: all 5s;
+    width: 450px;
+    transition: all 5s;
   }
-}
 
-@media (max-width: 600px) {
   main .box {
-      width: 800px;
-      padding: 20px;
-      /* height: 100vh; */
-      background-color: rgb(24, 240, 168);
-      border: none;
+    width: 800px;
+    padding: 20px;
+    /* height: 100vh; */
+    background-color: rgb(24, 240, 168);
+    border: none;
   }
-}
 
-@media (max-width: 600px) {
   main {
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }

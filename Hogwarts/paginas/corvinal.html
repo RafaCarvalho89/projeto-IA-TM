@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="/css/styleCorvinal.css">
     <link rel="stylesheet" href="/css/responsividade.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
    
 </head>
 <body>
-    <header id="topo">
+    <div id="topo">-</div>
+    <header>
         <div id="logo">
+            <img src="../store-hp/images/logo-hw-simples-400-azul.png" alt="Logo" class="logo-img">
             <h1>Corvinal</h1>
         </div>
         <div class="botaoMenu">
-            <a href="#" onclick="mostrarMenuLateral()">
+            <input type="checkbox" class="alteraMenu">
+            <div class="menu"></div>
+            <div class="menuLateral">
+                <nav>
+                    <ul>
+                        <!-- <li>
+                            <a href="" onclick="fecharMenuLateral()">
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </a>
+                        </li> -->
+                        <!-- <li><a href="index.html">Seleção das Casas</a></li> -->
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="../paginas/profetaDiario.html">Profeta Diário</a></li>
+                        <li><a href="../store-hp/index.html">Magic Store</a></li>
+                        <!-- <li><a href="membrosGrifinoria.html">Membros</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <!-- <a href="#" onclick="mostrarMenuLateral()">
                 <span class="material-symbols-outlined">
                 menu
                 </span>
-            </a>
+            </a> -->
         </div>
     </header>
     <section id="bemVindo">
@@ -93,7 +116,7 @@
                 </div>
                 <div id="salaComunal">
                     <h3>Sala Comunal</h3>
-                    <img style="width: 300px; float: right; margin-left: 10px; margin-top: 18px; padding: 5px; padding-bottom: 0;"src="/img/salaComunalCorvinal.webp">
+                    <img src="/img/salaComunalCorvinal.webp">
                     <p><span class="destaqueLetra">A</span> Sala Comunal da Casa Corvinal é um lugar verdadeiramente único e inspirador em Hogwarts. Localizada em uma torre alta, a sala oferece uma vista deslumbrante do castelo e dos terrenos da escola. Ela reflete a essência da casa, celebrando a inteligência, a criatividade e a busca pelo conhecimento.</p>
                     <p>Quando se entra na Sala Comunal, a primeira coisa que chama a atenção é a vista panorâmica das janelas. Os corvinais podem admirar o céu estrelado à noite ou a paisagem exuberante durante o dia. Essa vista espetacular muitas vezes inspira a contemplação e o pensamento profundo.</p>
 
@@ -108,7 +131,7 @@
                 </div>
                 <div id="diretor" style="margin-bottom: 30px;">
                     <h3>Diretor da casa</h3>
-                    <img style="width: 200px; float: left; margin-right: 10px; padding: 5px; padding-bottom: 0;"src="/img/filio.webp">
+                    <img src="/img/filio.webp">
                     <p><span class="destaqueLetra">U</span>m dos diretores mais notáveis da Corvinal foi o Professor <a href="">Fílio Flitwick</a>, também Mestre de Feitiços em Hogwarts. Sua paixão pelo ensino e seu compromisso com a excelência acadêmica eram inspiradores para os alunos da casa. Ele também desempenhava um papel ativo na orientação dos alunos em suas buscas intelectuais.</p>
 
                     <p>Independentemente de quem ocupa o cargo de Diretor, sua principal responsabilidade é criar um ambiente onde a busca pelo conhecimento seja incentivada e valorizada. Os diretores da Corvinal são conhecidos por seu apoio aos alunos em suas jornadas acadêmicas e por seu incentivo à curiosidade intelectual.</p>
@@ -123,7 +146,7 @@
         
         <nav id="menuBaixo">
             <ul>
-                <li><a class="ocultar" href="#"><img src="/img/seta.png" alt=""></a></li>
+                <!-- <li><a class="ocultar" href="#"><img src="/img/seta.png" alt=""></a></li> -->
                 <li><a href="#topo">Voltar ao Topo</a></li>
                 <li><a href="#tracos">Traços</a></li>
                 <li><a href="#reputacao">Reputação</a></li>
@@ -132,22 +155,34 @@
             </ul>
         </nav>      
     </main>
-    <aside id="menuLateral">
-        <nav>
-            <ul>
-                <li>
-                    <a href="" onclick="fecharMenuLateral()">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </a>
-                </li>
-                <!-- <li><a href="index.html">Seleção das Casas</a></li> -->
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="membrosGrifinoria.html">Membros</a></li>
-             </ul>
-         </nav>
-    </aside> 
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-img">
+                <img src="./images/hogwarts.png" alt="" class="hogwarts-crest">
+            </div>
+            <div class="about">
+                <p class="footer-text">
+                    Magic Commmerce é o destino perfeito para todos os bruxos e bruxas apaixonados pelo mundo mágico de Harry Potter. Nossa loja oferece uma ampla seleção de réplicas de varinhas, camisetas, casacos, cachecóis e estandartes de parede, para que você possa expressar sua devoção por essa saga encantadora. Desperte a magia em seu dia a dia com nossos produtos meticulosamente criados para os fãs mais exigentes.
+                </p>
+                <div>
+                    <p><a href="#">POLÍTICA DE PRIVACIDADE</a></p>
+                    <p><a href="#">TERMOS DE USO</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <p>ACESSE NOSSAS REDES</p>
+            <div class="social-media-logos">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="top-button">
+            <a href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </footer> 
 </body>
 <script src="/js/script.js"></script>
 </html>

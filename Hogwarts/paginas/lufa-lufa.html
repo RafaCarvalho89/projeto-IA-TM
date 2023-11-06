@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="/css/styleLufa-Lufa.css">
     <link rel="stylesheet" href="/css/responsividade.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
    
 </head>
 <body>
-    <header id="topo">
+    <div id="topo">-</div>
+    <header>
         <div id="logo">
+            <img src="../store-hp/images/logo-hw-simples-400-amarelo.png" alt="Logo" class="logo-img">
             <h1>Lufa-Lufa</h1>
         </div>
         <div class="botaoMenu">
-            <a href="#" onclick="mostrarMenuLateral()">
+            <input type="checkbox" class="alteraMenu">
+            <div class="menu"></div>
+            <div class="menuLateral">
+                <nav>
+                    <ul>
+                        <!-- <li>
+                            <a href="" onclick="fecharMenuLateral()">
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </a>
+                        </li> -->
+                        <!-- <li><a href="index.html">Seleção das Casas</a></li> -->
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="../paginas/profetaDiario.html">Profeta Diário</a></li>
+                        <li><a href="../store-hp/index.html">Magic Store</a></li>
+                        <!-- <li><a href="membrosGrifinoria.html">Membros</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <!-- <a href="#" onclick="mostrarMenuLateral()">
                 <span class="material-symbols-outlined">
                 menu
                 </span>
-            </a>
+            </a> -->
         </div>
     </header>
     <section id="bemVindo">
@@ -92,7 +115,7 @@
                 </div>
                 <div id="salaComunal">
                     <h3>Sala Comunal</h3>
-                    <img style="width: 300px; float: right; margin-left: 10px; margin-top: 18px; padding: 5px; padding-bottom: 0;"src="/img/salaComunalLufa-Lufa.jpg">
+                    <img src="/img/salaComunalLufa-Lufa.jpg">
                     <p><span class="destaqueLetra">A</span> Sala Comunal da Casa Lufa-Lufa é um refúgio acolhedor e caloroso localizado nas profundezas das masmorras da Escola de Magia e Bruxaria de Hogwarts. Ela reflete a essência da casa, com uma atmosfera que celebra valores como amizade, lealdade e igualdade. Aqueles que têm a sorte de chamar a Lufa-Lufa de lar encontram aqui um ambiente verdadeiramente especial.</p>
                     <p>Quando se entra na Sala Comunal, a primeira coisa que chama a atenção é a sensação de aconchego. As paredes são decoradas com painéis de madeira e estantes repletas de livros, criando um ambiente que lembra uma acolhedora casa de campo. Poltronas confortáveis e almofadas convidam os alunos a relaxar, estudar e compartilhar histórias com os amigos.</p>
 
@@ -107,7 +130,7 @@
                 </div>
                 <div id="diretor" style="margin-bottom: 30px;">
                     <h3>Diretor da casa</h3>
-                    <img style="width: 200px; float: left; margin-right: 10px; padding: 5px; padding-bottom: 0;"src="/img/pomona.webp">
+                    <img src="/img/pomona.webp">
                     <p><span class="destaqueLetra">U</span>m dos diretores mais notáveis da Casa Lufa-Lufa foi Pomona Sprout, a Mestra de Herbologia. Ela era conhecida por sua paixão pelas plantas e pela dedicação em ensinar aos alunos os segredos da Herbologia. Sua influência na casa era profunda, e ela inspirou muitos lufa-lufanos a seguir carreiras relacionadas à natureza e à magia das plantas.</p>
 
                     <p>Independentemente de quem ocupa o cargo de Diretor, a principal responsabilidade é criar um ambiente onde os valores da Lufa-Lufa possam prosperar. Isso inclui promover a lealdade, a paciência, a amizade e a igualdade entre os alunos. O Diretor desempenha um papel fundamental na promoção desses valores e no fortalecimento dos laços entre os membros da casa.</p>
@@ -122,7 +145,7 @@
         
         <nav id="menuBaixo">
             <ul>
-                <li><a class="ocultar" href="#"><img src="/img/seta.png" alt=""></a></li>
+                <!-- <li><a class="ocultar" href="#"><img src="/img/seta.png" alt=""></a></li> -->
                 <li><a href="#topo">Voltar ao Topo</a></li>
                 <li><a href="#tracos">Traços</a></li>
                 <li><a href="#reputacao">Reputação</a></li>
@@ -131,22 +154,34 @@
             </ul>
         </nav>      
     </main>
-    <aside id="menuLateral">
-        <nav>
-            <ul>
-                <li>
-                    <a href="" onclick="fecharMenuLateral()">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </a>
-                </li>
-                <!-- <li><a href="index.html">Seleção das Casas</a></li> -->
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="membrosGrifinoria.html">Membros</a></li>
-             </ul>
-         </nav>
-    </aside> 
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-img">
+                <img src="./images/hogwarts.png" alt="" class="hogwarts-crest">
+            </div>
+            <div class="about">
+                <p class="footer-text">
+                    Magic Commmerce é o destino perfeito para todos os bruxos e bruxas apaixonados pelo mundo mágico de Harry Potter. Nossa loja oferece uma ampla seleção de réplicas de varinhas, camisetas, casacos, cachecóis e estandartes de parede, para que você possa expressar sua devoção por essa saga encantadora. Desperte a magia em seu dia a dia com nossos produtos meticulosamente criados para os fãs mais exigentes.
+                </p>
+                <div>
+                    <p><a href="#">POLÍTICA DE PRIVACIDADE</a></p>
+                    <p><a href="#">TERMOS DE USO</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <p>ACESSE NOSSAS REDES</p>
+            <div class="social-media-logos">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="top-button">
+            <a href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </footer>
 </body>
 <script src="/js/script.js"></script>
 </html>

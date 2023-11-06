@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&family=Inter:wght@100;200;300;400&family=Just+Another+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Pacifico&family=Roboto:wght@100&display=swap');
 
 @font-face {
     font-family: 'PD Fonte';
@@ -25,9 +27,155 @@ p {
 }
 
 header {
+    background-color: antiquewhite;
+    background-image: url(/img/fundo-de-papel-antigo-do-vintage-grunge_1373-431.avif);
+    background-size: cover;
+    height: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: var(--sombraDiv); */
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+#logo {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#logo h1 {
+    font-family: 'Bigelow Rules', cursive;
+    font-size: 45px;
+    margin: 30px;
+    color: var(--escarlate);
+    text-shadow: var(sombraTexto);
+ }
+
+ .logo-img {
+    height: 70px;
+ }
+
+ .botaoMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 50px;
+    font-family: 'Roboto';
+ }
+ 
+ .menu {
+    position: relative;
+    width: 30px;
+    height: 4px;
+    background: var(--escarlate);
+    border-radius: 10px;
+    z-index: 2;
+    transition: .8s ease-in-out;
+ }
+ 
+ .menu::before,
+ .menu::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: var(--escarlate);
+    border-radius: 10px;
+    transition: .8s ease-in-out;
+ }
+ 
+ .menu::before {
+    top: -10px;
+ }
+ 
+ .menu::after {
+    top: 10px;
+ }
+ 
+ .alteraMenu {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 3;
+    opacity: 0;
+ }
+ 
+ .botaoMenu input:checked ~ .menu {
+    background: transparent;
+ }
+ 
+ .botaoMenu input:checked ~ .menu::before {
+    top: 0;
+    transform: rotate(-45deg);
+ }
+ 
+ .botaoMenu input:checked ~ .menu::after {
+    top: 0;
+    transform: rotate(45deg);
+ }
+ 
+ .botaoMenu input:checked ~ .menu::before, .menu::after, .alteraMenu {
+    z-index: 10;
+ }
+ 
+ .menuLateral {
+    background-color: var(--ouro);
+ }
+ 
+ .menuLateral ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .botaoMenu input:checked ~ .menuLateral {
+    right: 0;
+ }
+ 
+ .menu,
+ .alteraMenu {
+    display: none;
+ }
+ 
+ .menuLateral li{
+    color: var(--branco);
+    list-style: none;
+    padding: 20px;
+    text-transform: uppercase;
+ }
+ 
+ .menuLateral a {
+    text-decoration: none;
+    width: 300px;
+    height: 20px;
+    color: var(--escarlate);
+    font-weight: bold;
+    text-shadow: .5px .5px 0 #000;
+    background: linear-gradient(90deg, #000, 50%, transparent, 50%);
+    display: inline;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 100% 28px;
+    transition: 1s ease-in-out;
+ }
+ 
+ .menuLateral a:hover {
+    background-position: 0% 28px;
+ }
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-top: 70px;  
 }
 
 main {
@@ -111,3 +259,29 @@ h3 {
     font-weight: bold;
     text-align: right;
 }
+
+@media (max-width: 1080px) {
+    .menuLateral ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .menuLateral {
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      height: 100vh;                                     
+      position: fixed;  
+      top: 0;
+      padding-top: 70px;
+      z-index: 1;
+      transition: 0.8s ease-in-out;
+   }
+   .botaoMenu input:checked ~ .menuLateral {
+      right: 0;
+    }
+    .menu,
+    .alteraMenu {
+      display: block;
+    }
+  }

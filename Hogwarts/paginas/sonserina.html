@@ -7,19 +7,42 @@
     <link rel="stylesheet" href="/css/styleSonserina.css">
     <link rel="stylesheet" href="/css/responsividade.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
    
 </head>
 <body>
-    <header id="topo">
+    <div id="topo">-</div>
+    <header>
         <div id="logo">
+            <img src="../store-hp/images/logo-hw-simples-400-verde.png" alt="Logo" class="logo-img">
             <h1>Sonserina</h1>
         </div>
         <div class="botaoMenu">
-            <a href="#" onclick="mostrarMenuLateral()">
+            <input type="checkbox" class="alteraMenu">
+            <div class="menu"></div>
+            <div class="menuLateral">
+                <nav>
+                    <ul>
+                        <!-- <li>
+                            <a href="" onclick="fecharMenuLateral()">
+                                <span class="material-symbols-outlined">
+                                    close
+                                </span>
+                            </a>
+                        </li> -->
+                        <!-- <li><a href="index.html">Seleção das Casas</a></li> -->
+                        <li><a href="../home.html">Home</a></li>
+                        <li><a href="../paginas/profetaDiario.html">Profeta Diário</a></li>
+                        <li><a href="../store-hp/index.html">Magic Store</a></li>
+                        <!-- <li><a href="membrosGrifinoria.html">Membros</a></li> -->
+                    </ul>
+                </nav>
+            </div>
+            <!-- <a href="#" onclick="mostrarMenuLateral()">
                 <span class="material-symbols-outlined">
                 menu
                 </span>
-            </a>
+            </a> -->
         </div>
     </header>
     <section id="bemVindo">
@@ -90,7 +113,7 @@
                 </div>
                 <div id="salaComunal">
                     <h3>Sala Comunal</h3>
-                    <img style="width: 300px; float: right; margin-left: 10px; margin-top: 18px; padding: 5px; padding-bottom: 0;"src="/img/salaComunalSonserina.webp">
+                    <img src="/img/salaComunalSonserina.webp">
                     <p><span class="destaqueLetra">A</span> sala comunal da Sonserina é um ambiente único e enigmático dentro do castelo de Hogwarts, que contribui para a reputação complexa da casa. Localizada nas masmorras da escola, a sala comunal da Sonserina é um lugar onde a atmosfera é marcada pela escuridão e pelo sigilo.</p>
                     <p>Decorada com paredes de pedra fria e iluminada por uma luz ambiente sutil, a sala comunal cria uma sensação de mistério e exclusividade. Ela é acessada através de uma entrada oculta, geralmente localizada por uma passagem atrás de um quadro de uma bruxa gorda.</p>
                     <p>A decoração da sala comunal reflete a herança da casa, com tapeçarias que exibem serpentes e móveis em tons de verde e prata, as cores da Sonserina. O ambiente é projetado para atrair aqueles que apreciam a escuridão e a solidão, e muitos sonserinos se sentem em casa nesse ambiente íntimo.</p>
@@ -100,7 +123,7 @@
                 </div>
                 <div id="diretor" style="margin-bottom: 30px;">
                     <h3>Diretor da casa</h3>
-                    <img style="width: 200px; float: left; margin-right: 10px; padding: 5px; padding-bottom: 0;"src="/img/horacio.jpg">
+                    <img src="/img/horacio.jpg">
                     <p>Um dos diretores mais destacados da Sonserina foi Horácio Slughorn, um bruxo conhecido por seu talento em poções e por seu gosto por estudantes talentosos e promissores. Slughorn ocupou o cargo de diretor da casa duas vezes, com sua primeira aposentadoria ocorrendo em 1981 e seu retorno ao cargo em 1997, pouco antes do fim da Segunda Guerra Bruxa. Sua abordagem acolhedora e sua habilidade em reconhecer o potencial de jovens bruxos o tornaram um diretor querido por muitos sonserinos.</p>
                     <p>Outro diretor notável da Sonserina foi Severo Snape, um bruxo com um passado complexo e uma lealdade ambígua. Snape era conhecido por sua destreza em poções e suas habilidades em Legilimência. Sua nomeação como diretor da casa foi acompanhada de controvérsia devido à sua associação anterior com os Comensais da Morte. No entanto, Snape desempenhou um papel vital na luta contra as forças das trevas e protegeu Hogwarts de dentro.</p>
                     <p>Cada diretor da casa Sonserina trouxe sua própria personalidade e estilo de liderança para o cargo, moldando a experiência dos sonserinos ao longo dos anos. Embora tenham havido diferenças significativas entre eles, todos compartilharam o compromisso de guiar e apoiar os estudantes da casa em seu caminho rumo ao sucesso e à realização de seus objetivos mágicos.</p>
@@ -111,7 +134,7 @@
         
         <nav id="menuBaixo">
             <ul>
-                <li><a class="ocultar" href="#"><img src="/img/seta.png" alt=""></a></li>
+                <!-- <li><a class="ocultar" href="#"><img src="/img/seta.png" alt=""></a></li> -->
                 <li><a href="#topo">Voltar ao Topo</a></li>
                 <li><a href="#tracos">Traços</a></li>
                 <li><a href="#reputacao">Reputação</a></li>
@@ -120,22 +143,34 @@
             </ul>
         </nav>      
     </main>
-    <aside id="menuLateral">
-        <nav>
-            <ul>
-                <li>
-                    <a href="" onclick="fecharMenuLateral()">
-                        <span class="material-symbols-outlined">
-                            close
-                        </span>
-                    </a>
-                </li>
-                <!-- <li><a href="index.html">Seleção das Casas</a></li> -->
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="membrosGrifinoria.html">Membros</a></li>
-             </ul>
-         </nav>
-    </aside> 
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="footer-img">
+                <img src="./images/hogwarts.png" alt="" class="hogwarts-crest">
+            </div>
+            <div class="about">
+                <p class="footer-text">
+                    Magic Commmerce é o destino perfeito para todos os bruxos e bruxas apaixonados pelo mundo mágico de Harry Potter. Nossa loja oferece uma ampla seleção de réplicas de varinhas, camisetas, casacos, cachecóis e estandartes de parede, para que você possa expressar sua devoção por essa saga encantadora. Desperte a magia em seu dia a dia com nossos produtos meticulosamente criados para os fãs mais exigentes.
+                </p>
+                <div>
+                    <p><a href="#">POLÍTICA DE PRIVACIDADE</a></p>
+                    <p><a href="#">TERMOS DE USO</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <p>ACESSE NOSSAS REDES</p>
+            <div class="social-media-logos">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="top-button">
+            <a href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+        </div>
+    </footer>
 </body>
 <script src="/js/script.js"></script>
 </html>

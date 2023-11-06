@@ -5,6 +5,7 @@
    --azul : #034C8C;
    --prata: #A1A1A1;
    --bronze: #CD7F32;
+   --bronzeForte: #d76b00;
    --branco: #ffffff;
    --preto: #000000;
    --sombraFonte: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -17,7 +18,7 @@
    padding: 0;
    box-sizing: border-box;
    font-family: 'Roboto' ;
-   color: var(--branco);
+   /* color: var(--branco); */
 }
 
 html {
@@ -32,12 +33,24 @@ body {
 header {
    background-color: var(--bronze);
    height: 10px;
+   width: 100vw;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   flex-direction: row-reverse;
    box-shadow: var(--sombraDiv);
    padding: 30px;
+   position: fixed;
+   top: 0;
+}
+
+.logo-img {
+   height: 70px;
+}
+
+#logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 #logo h1 {
@@ -46,6 +59,114 @@ header {
    margin: 30px;
    color: var(--azul);
    text-shadow: var(sombraFonte);
+}
+
+.botaoMenu {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   cursor: pointer;
+}
+
+.menu {
+   position: relative;
+   width: 30px;
+   height: 4px;
+   background: var(--azul);
+   border-radius: 10px;
+   z-index: 2;
+   transition: .8s ease-in-out;
+}
+
+.menu::before,
+.menu::after {
+   content: "";
+   position: absolute;
+   width: 30px;
+   height: 4px;
+   background: var(--azul);
+   border-radius: 10px;
+   transition: .8s ease-in-out;
+}
+
+.menu::before {
+   top: -10px;
+}
+
+.menu::after {
+   top: 10px;
+}
+
+.alteraMenu {
+   position: absolute;
+   width: 30px;
+   height: 30px;
+   cursor: pointer;
+   z-index: 3;
+   opacity: 0;
+}
+
+.botaoMenu input:checked ~ .menu {
+   background: transparent;
+}
+
+.botaoMenu input:checked ~ .menu::before {
+   top: 0;
+   transform: rotate(-45deg);
+}
+
+.botaoMenu input:checked ~ .menu::after {
+   top: 0;
+   transform: rotate(45deg);
+}
+
+.botaoMenu input:checked ~ .menu::before, .menu::after, .alteraMenu {
+   z-index: 10;
+}
+
+.menu,
+.alteraMenu {
+   display: none;
+}
+
+.menuLateral {
+   background-color: var(--bronze);
+}
+
+.menuLateral ul{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.botaoMenu input:checked ~ .menuLateral {
+   right: 0;
+}
+
+.menuLateral li{
+   color: var(--branco);
+   list-style: none;
+   padding: 20px;
+   text-transform: uppercase;
+}
+
+.menuLateral a {
+   width: 300px;
+   height: 20px;
+   color: var(--azul);
+   font-weight: bold;
+   text-shadow: .5px .5px 0 var(--azul);
+   background: linear-gradient(90deg, var(--azul), 50%, transparent, 50%);
+   display: inline;
+   background-size: 200%;
+   background-repeat: no-repeat;
+   background-position: 100% 28px;
+   transition: 1s ease-in-out;
+}
+
+.menuLateral a:hover {
+   background-position: 0% 28px;
 }
 
 span {
@@ -68,6 +189,7 @@ main {
 
 #principal{
    display: flex;
+   min-width: 350px;
    width: 70%;
    height: auto;
    margin: 0 auto;
@@ -75,10 +197,28 @@ main {
    padding: 30px;   
 }
 
+#salaComunal img {
+   width: 300px; 
+   float: right; 
+   margin-left: 10px; 
+   margin-top: 18px; 
+   padding: 5px; 
+   padding-bottom: 0;
+}
+
+#diretor img {
+   width: 200px; 
+   float: left; 
+   margin-right: 10px;
+   padding: 5px; 
+   padding-bottom: 0;
+}
+
 #conteudoLateral {
    margin: 30px;
    padding: 20px;
-   width: 30%;
+   min-width: 300px;
+   max-width: 30%;
    background-image: url(../img/bgAside.jpg);
    background-size: contain; 
    /* background-position: center; */
@@ -98,6 +238,7 @@ main {
    background-image: url(../img/brilhoAzul.gif);
    font-size: 20px;
    font-weight: lighter;
+   margin-top: 50px;
 }
 
 #bemVindo  p {
@@ -169,7 +310,6 @@ a:hover{
    font-weight: bold;
    cursor: pointer;
 }
-
 
 ol {
    margin-left: 30px;
@@ -284,3 +424,85 @@ p {
    font-weight: bold;
 }
 
+.footer {
+   background-color: var(--azul);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   margin: auto 30px;
+   margin-top: 10px;
+   border-top: 1px solid var(--bronze);
+   padding: 30px 30px;
+   position: relative;
+}
+.footer-main {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.hogwarts-crest {
+   width: 100px;
+}
+.about {
+   max-width: 420px;
+   margin-left: 50px;
+   text-align: justify;
+}
+.about div {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   gap: 10px;
+   text-align: left;
+}
+.footer-text {
+   color: var(--bronze);
+   font-weight: 800;
+   margin-bottom: 20px;
+}
+.about a {
+   text-decoration: none;
+   font-weight: 600;
+   color: var(--bronze);
+}
+.social-media p {
+   font-weight: 700;
+   color: var(--bronze);
+   margin-bottom: 10px;
+}
+.social-media-logos {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-size: 25px;
+}
+.social-media-logos a {
+   color: var(--bronze);
+}
+.footer a {
+   text-decoration: none;
+   color: var(--bronze);
+   transition: 0.5s ease-in-out;
+}
+.footer a:hover {
+   color: var(--bronzeHover);
+}
+.top-button {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   background-color: var(--bronze);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   transform: rotateZ(-45deg);
+   top: -25px;
+   right: 30px;
+}
+.top-button i {
+   transform: rotateZ(45deg);
+   color: var(--azul);
+}
